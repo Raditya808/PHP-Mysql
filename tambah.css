@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation Bar */
+ul {
+  list-style: none;
+  margin-bottom: 35px;
+  padding-left: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  background: #6c6c6c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #4a4a4a;
+}
+
+/* Form Container */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Fieldset */
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="varchar"],
+input[type="int"],
+input[type="radio"] {
+  width: 100%; /* Ensures all inputs take up full width */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4a4a4a;
+}
+
+/* Align elements center */
+.center form input[type="submit"] {
+  margin-top: 20px;
+}
+
+/* Customizing individual input widths for consistency */
+input[name="nama"],
+input[name="npm"] {
+  width: 100%; /* Matches both input fields' width */
+}
+
+/* Optional additional space between fields */
+input[name="nama"],
+input[name="npm"] {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Increase size of the "Nama" input */
+input[name="nama"] {
+  font-size: 13px; /* Increase font size */
+  padding: 10px; /* Add more padding for a larger input box */
+}
